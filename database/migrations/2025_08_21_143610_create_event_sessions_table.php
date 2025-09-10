@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->datetime('start_time');
             $table->datetime('end_time');
-            $table->foreignId('speakers_id')->constrained();
+            $table->foreignId('speaker_id')->constrained();
             $table->string('location');
             $table->integer('max_participants')->default(50);
             $table->timestamps();
